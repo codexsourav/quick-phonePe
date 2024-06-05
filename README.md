@@ -48,20 +48,16 @@ const transactionData = {
     name: 'John Doe',
     amount: 10000, // amount in paisa (1 INR = 100 paisa)
     redirectUrl: 'https://yourwebsite.com/callback',
-    redirectMode: 'POST',
+    redirectMode: 'REDIRECT',
     mobileNumber: '1234567890',
     paymentInstrument: {
         type: 'PAY_PAGE'
     }
 };
 
-phonePe.createTransaction(transactionData)
-    .then(response => {
-        console.log('Transaction Response:', response);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+const response = await phonePe.createTransaction(transactionData);
+console.log(response);
+
 ```
 
 ### Verify a Transaction
@@ -71,13 +67,9 @@ To verify the status of a transaction, use the `verifyTransaction` method with t
 ```javascript
 const merchantTransactionId = 'txn_001';
 
-phonePe.verifyTransaction(merchantTransactionId)
-    .then(response => {
-        console.log('Verification Response:', response);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+const response = await phonePe.verifyTransaction(merchantTransactionId);
+console.log(response);
+
 ```
 
 ## API Reference

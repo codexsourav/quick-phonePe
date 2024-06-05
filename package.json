@@ -1,7 +1,7 @@
 {
   "name": "quick-phonepe",
-  "version": "1.0.31",
-  "description": "easy to use phone pay payment gateway",
+  "version": "1.0.0",
+  "description": "easy to use phonepe sdk for payment integration",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,9 +12,11 @@
   },
   "keywords": [
     "phonepe",
-    "phonepe",
-    "payment",
-    "gateway"
+    "phonepe-sdk",
+    "sdk",
+    "gateway",
+    "upi",
+    "payment"
   ],
   "author": "Sourav Bapari",
   "license": "ISC",
